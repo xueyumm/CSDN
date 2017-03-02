@@ -1,0 +1,19 @@
+{
+	"index.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/style.css",
+			"images/79c5c85e801dd1f5b363e225e6da9ac8.jpg",
+			"js/mui.js",
+			"js/jquery-1.12.4.min.js",
+			"images/pic02.jpg",
+			"images/pic01.jpg",
+			"js/style.js",
+			"images/2.jpg",
+			"images/3.jpg",
+			"images/1.jpg"
+		]
+	}
+}

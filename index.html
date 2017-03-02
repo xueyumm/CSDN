@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>CSDN博客</title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <style type="text/css">
+    	.mui-control-content{
+    		height: 600px;
+    	}
+    </style>
+</head>
+<body>
+	 <!-- 主界面移动、菜单不动 -->
+    <div class="mui-off-canvas-wrap mui-draggable">
+      <!-- 菜单容器 -->
+      <aside class="mui-off-canvas-left two-left" id="offCanvasSide">
+        <div class="mui-scroll-wrapper">
+          <div class="mui-scroll">
+            <!-- 菜单具体展示内容 -->
+            <div class="left_top">
+            	<div class="top_img">
+            		<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg" width="60px" height="60px">
+            	</div>
+            	<div class="top_name">
+            		<p>用户名</p>
+            		<p class="game_money">0 c币</p>
+            	</div>
+            </div>
+            <div class="left_content" id="left1">
+            	<ul class="list1">
+            		<li><span class="mui-icon mui-icon-camera"></span><a href="#">头条</a></li>
+            		<li><span class="mui-icon mui-icon-compose"></span><a href="#">博客</a></li>
+            		<li><span class="mui-icon mui-icon-help"></span><a href="#">问答</a></li>
+            		<li><span class="mui-icon mui-icon-chatboxes"></span><a href="#">论坛</a></li>
+            		<li><span class="mui-icon mui-icon-contact"></span><a href="#">我的</a></li>
+            		<li><span class="mui-icon mui-icon-gear"></span><a href="#">设置</a></li>
+            	</ul>
+            	<div class="left_foot">
+            	<p><a href="#">日间模式</a></p>
+            </div>
+            </div>
+            
+          </div>
+        </div>
+      </aside>
+      <!-- 主页面容器 -->
+      <div class="mui-inner-wrap">
+        <!-- 主页面标题 -->
+        <header class="mui-bar mui-bar-nav">
+          <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"  href="#offCanvasSide"></a>
+          <h1 class="mui-title">头条</h1>
+          <div class="tianjia">
+          	<ul>
+          		<li><a href=""><span class="tianjia1">+</span></a></li>
+          		<li><a href=""><span class="mui-icon mui-icon-search tianjia2"></span></a></li>
+          	</ul>
+          </div>
+          
+        </header>
+        <div class="mui-content" >
+          <!--<div class="mui-scroll">-->
+            <!-- 主界面具体展示内容 -->
+            <div class="mui-slider">
+		        <div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+		            <a class="mui-control-item mui-active" href="#item1">最新</a>
+		            <a class="mui-control-item" href="#item2">前端</a>
+		            <a class="mui-control-item" href="#item3">语言</a>
+		            <a class="mui-control-item" href="#item4">游戏</a>
+		            <a class="mui-control-item" href="#item5">数据库</a>
+		            <a class="mui-control-item" href="#item6">云计算</a>
+		        </div>
+		        <div class="xiala">
+		            <span class="mui-icon mui-icon-arrowdown" style="border: 0;"></span>
+		        </div>
+		            
+				<div id="item1" class="mui-slider-item mui-control-content mui-active">
+					<div class="mui-content mui-scroll-wrapper">
+					<div class="mui-scroll">
+				    <div id="slider" class="mui-slider" >
+		              <div class="mui-slider-group mui-slider-loop">
+		                <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+		                <div class="mui-slider-item mui-slider-item-duplicate">
+		                  <a href="#">
+		                    <img src="images/2.jpg">
+		                  </a>
+		                  <div class="lunbo_txt2">
+		                  		<h4>web前端</h4>
+		                    	<span>浅谈web前端在IT界的前景,及现在的就业行情</span>
+		                  </div>
+		                </div>
+		                <!-- 第一张 -->
+		                <div class="mui-slider-item">
+		                  <a href="#">
+		                    <img src="images/3.jpg">
+		                  </a>
+		                  <div class="lunbo_txt1">
+		                  		<h4>web前端</h4>
+		                    	<span>浅谈web前端在IT界的前景,及现在的就业行情</span>
+		                  </div>
+		                </div>
+		                <!-- 第二张 -->
+		                <div class="mui-slider-item">
+		                  <a href="#">
+		                    <img src="images/2.jpg">
+		                  </a>
+		                  <div class="lunbo_txt2">
+		                  		<h4>web前端</h4>
+		                    	<span>浅谈web前端在IT界的前景,及现在的就业行情</span>
+		                  </div>
+		                </div>
+		                <!-- 第三张 -->
+		                <div class="mui-slider-item">
+		                  <a href="#">
+		                    <img src="images/3.jpg">
+		                  </a>
+		                  <div class="lunbo_txt1">
+		                  		<h4>web前端</h4>
+		                    	<span>浅谈web前端在IT界的前景,及现在的就业行情</span>
+		                  </div>
+		                </div>
+		                <!-- 第四张 -->
+		                <div class="mui-slider-item">
+		                  <a href="#">
+		                    <img src="images/2.jpg">
+		                  </a>
+		                  <div class="lunbo_txt2">
+		                  		<h4>web前端</h4>
+		                    	<span>浅谈web前端在IT界的前景,及现在的就业行情</span>
+		                  </div>
+		                </div>
+		                <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+		                <div class="mui-slider-item mui-slider-item-duplicate">
+		                  <a href="#">
+		                    <img src="images/3.jpg">
+		                  </a>
+		                  <div class="lunbo_txt1">
+		                  		<h4>web前端</h4>
+		                    	<span>浅谈web前端在IT界的前景,及现在的就业行情</span>
+		                  </div>
+		                </div>
+		              </div>
+		              <!--<div class="mui-slider-indicator">
+		                <div class="mui-indicator mui-active"></div>
+		                <div class="mui-indicator"></div>
+		                <div class="mui-indicator"></div>
+		                <div class="mui-indicator"></div>
+		              </div>-->
+		            </div>
+		            
+		        <ul class="mui-table-view">
+             	    <li class="mui-table-view-cell mui-media list_cont">
+             	        <a href="javascript:;">
+             	            <img class="mui-media-object mui-pull-right" src="images/pic02.jpg">
+             	            <div class="mui-media-body">
+             	                35个Java代码性能优化终结
+             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+             	            </div>
+             	            <span class="zuozhe">
+             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+             	            </span>
+             	        </a>
+             	    </li>
+             	    <li class="mui-table-view-cell mui-media list_cont">
+             	        <a href="javascript:;">
+             	            <img class="mui-media-object mui-pull-right" src="images/pic01.jpg">
+             	            <div class="mui-media-body">
+             	                web前端知识点总结
+             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+             	            </div>
+             	            <span class="zuozhe">
+             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+             	            </span>
+             	        </a>
+             	    </li>
+             	    <li class="mui-table-view-cell mui-media list_cont">
+             	        <a href="javascript:;">
+             	            <img class="mui-media-object mui-pull-right" src="images/pic02.jpg">
+             	            <div class="mui-media-body">
+             	               Linux信号处理
+             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+             	            </div>
+             	            <span class="zuozhe">
+             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+             	            </span>
+             	        </a>
+             	    </li>
+             	    <li class="mui-table-view-cell mui-media list_cont">
+             	        <a href="javascript:;">
+             	            <img class="mui-media-object mui-pull-right" src="images/pic01.jpg">
+             	            <div class="mui-media-body">
+             	                移动端开发需要注意的事项
+             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+             	            </div>
+             	            <span class="zuozhe">
+             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+             	            </span>
+             	        </a>
+             	    </li>
+             	    <li class="mui-table-view-cell mui-media list_cont">
+             	        <a href="javascript:;">
+             	            <img class="mui-media-object mui-pull-right" src="images/pic02.jpg">
+             	            <div class="mui-media-body">
+             	                swift设计模式学习-模板方法模式
+             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+             	            </div>
+             	            <span class="zuozhe">
+             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+             	            </span>
+             	        </a>
+             	    </li>
+             	    <li class="mui-table-view-cell mui-media list_cont">
+             	        <a href="javascript:;">
+             	            <img class="mui-media-object mui-pull-right" src="images/pic01.jpg">
+             	            <div class="mui-media-body">
+             	                使用Electron处理窗体崩溃和挂起
+             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+             	            </div>
+             	            <span class="zuozhe">
+             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+             	            </span>
+             	        </a>
+             	    </li>
+             	    <li class="mui-table-view-cell mui-media list_cont">
+             	        <a href="javascript:;">
+             	            <img class="mui-media-object mui-pull-right" src="images/pic02.jpg">
+             	            <div class="mui-media-body">
+             	                web前端知识点总结
+             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+             	            </div>
+             	            <span class="zuozhe">
+             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+             	            </span>
+             	        </a>
+             	    </li>
+             	    <li class="mui-table-view-cell mui-media list_cont" style="padding-bottom: 40px;">
+             	        <a href="javascript:;">
+             	            <img class="mui-media-object mui-pull-right" src="images/pic01.jpg">
+             	            <div class="mui-media-body">
+             	                移动端开发需要注意的事项
+             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+             	            </div>
+             	            <span class="zuozhe">
+             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+             	            </span>
+             	        </a>
+             	    </li>
+             	</ul>
+				</div>
+				</div>
+				</div>
+				
+				
+				
+				<div id="item2" class="mui-slider-item mui-control-content">
+					<div class="mui-content mui-scroll-wrapper">
+					<div class="mui-scroll">
+				    <ul class="mui-table-view">
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <img class="mui-media-object mui-pull-right" src="images/pic02.jpg">
+	             	            <div class="mui-media-body">
+	             	                RxJS入门指引和初步应用
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <img class="mui-media-object mui-pull-right" src="images/pic01.jpg">
+	             	            <div class="mui-media-body">
+	             	                函数式编程入门总结
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <img class="mui-media-object mui-pull-right" src="images/pic02.jpg">
+	             	            <div class="mui-media-body">
+	             	               JavaScript初学和进阶思维导图
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <img class="mui-media-object mui-pull-right" src="images/pic01.jpg">
+	             	            <div class="mui-media-body">
+	             	                JS那些奇怪的题目
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <img class="mui-media-object mui-pull-right" src="images/pic02.jpg">
+	             	            <div class="mui-media-body">
+	             	                前端面试题总结
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <img class="mui-media-object mui-pull-right" src="images/pic01.jpg">
+	             	            <div class="mui-media-body">
+	             	                无bug,提升代码质量的秘诀
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <img class="mui-media-object mui-pull-right" src="images/pic02.jpg">
+	             	            <div class="mui-media-body">
+	             	                web前端知识点总结
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont" style="padding-bottom: 40px;">
+	             	        <a href="javascript:;">
+	             	            <img class="mui-media-object mui-pull-right" src="images/pic01.jpg">
+	             	            <div class="mui-media-body">
+	             	                移动端开发需要注意的事项
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	</ul>
+				</div>
+				</div>
+				</div>
+				
+				
+				
+				<div id="item3" class="mui-slider-item mui-control-content">
+					<div class="mui-content mui-scroll-wrapper">
+					<div class="mui-scroll">
+				    <ul class="mui-table-view">
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <div class="mui-media-body">
+	             	                Android之SDK、NDK、JNI和so文件
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <div class="mui-media-body">
+	             	                web前端知识点总结
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <div class="mui-media-body">
+	             	               35个Java代码性能优化终结
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <div class="mui-media-body">
+	             	                移动端开发需要注意的事项
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <div class="mui-media-body">
+	             	                为跳槽的你献计献策
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <div class="mui-media-body">
+	             	                Android单击显示onCreateContextMenue
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <div class="mui-media-body">
+	             	                一份简单的APP兼容性测试报告
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont" style="padding-bottom: 40px;">
+	             	        <a href="javascript:;">
+	             	            <div class="mui-media-body">
+	             	                移动端开发需要注意的事项
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	</ul>
+				</div>
+				</div>
+				</div>
+				
+				
+				<div id="item4" class="mui-slider-item mui-control-content">
+					<div class="mui-content mui-scroll-wrapper">
+					<div class="mui-scroll">
+				    <ul class="mui-table-view">
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <div class="mui-media-body">
+	             	                AI背后的数据科学
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <div class="mui-media-body">
+	             	                Aforge技术资源共享平台
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <div class="mui-media-body">
+	             	               HTC会推出一款怎样的移动VR产品
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <div class="mui-media-body">
+	             	                从0到1的VR界面设计之路
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <div class="mui-media-body">
+	             	                游戏开发知识点总结
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <div class="mui-media-body">
+	             	                移动端开发需要注意的事项
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <div class="mui-media-body">
+	             	                web前端知识点总结
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont" style="padding-bottom: 40px;">
+	             	        <a href="javascript:;">
+	             	            <div class="mui-media-body">
+	             	                移动端开发需要注意的事项
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	</ul>
+				</div>
+				</div>
+				</div>
+				
+				
+				<div id="item5" class="mui-slider-item mui-control-content">
+					<div class="mui-content mui-scroll-wrapper">
+					<div class="mui-scroll">
+				    <ul class="mui-table-view">
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <div class="mui-media-body">
+	             	                关于访问控制服务
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <div class="mui-media-body">
+	             	                高一致分布式数据库Galera Cluster
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <div class="mui-media-body">
+	             	               关于数据管理服务
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <div class="mui-media-body">
+	             	                关于Blobstore
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <div class="mui-media-body">
+	             	                35个Java代码性能优化终结
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <div class="mui-media-body">
+	             	                运维DBA的4大纪律9项注意
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <div class="mui-media-body">
+	             	                web前端知识点总结
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont" style="padding-bottom: 40px;">
+	             	        <a href="javascript:;">
+	             	            <div class="mui-media-body">
+	             	                移动端开发需要注意的事项
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	</ul>
+				</div>
+				</div>
+				</div>
+				
+				
+				<div id="item6" class="mui-slider-item mui-control-content">
+					<div class="mui-content mui-scroll-wrapper">
+					<div class="mui-scroll">
+				    <ul class="mui-table-view">
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <div class="mui-media-body">
+	             	                35个Java代码性能优化终结
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <div class="mui-media-body">
+	             	                web前端知识点总结
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <div class="mui-media-body">
+	             	               35个Java代码性能优化终结
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <div class="mui-media-body">
+	             	                移动端开发需要注意的事项
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <div class="mui-media-body">
+	             	                35个Java代码性能优化终结
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <div class="mui-media-body">
+	             	                移动端开发需要注意的事项
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont">
+	             	        <a href="javascript:;">
+	             	            <div class="mui-media-body">
+	             	                web前端知识点总结
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	    <li class="mui-table-view-cell mui-media list_cont" style="padding-bottom: 40px;">
+	             	        <a href="javascript:;">
+	             	            <div class="mui-media-body">
+	             	                移动端开发需要注意的事项
+	             	                <p class="mui-ellipsis">来自：www.mp,weixin.qq.com</p>
+	             	            </div>
+	             	            <span class="zuozhe">
+	             	            	<img src="images/79c5c85e801dd1f5b363e225e6da9ac8.jpg">
+	             	            	<span class="list-time">snow_分享于  今天  14:20</span>
+	             	            	<p><span class="mui-icon mui-icon-chatbubble list_star"></span></p>
+	             	            	<p><span class="mui-icon mui-icon-star list_star"></span></p>
+	             	            </span>
+	             	        </a>
+	             	    </li>
+	             	</ul>
+				</div>
+				</div>
+          </div>
+          </div>
+          <!--</div>-->
+          
+          
+        </div> 
+      </div> 
+    </div>
+    <script src="js/mui.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    	mui.init();
+		// 轮播
+    	//获得slider插件对象
+		var gallery = mui('.mui-slider');
+		gallery.slider({
+		  interval:5000//自动轮播周期，若为0则不自动播放，默认为0；
+		});
+		//上下滚动
+		mui('.mui-scroll-wrapper').scroll({
+			deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+		});
+		
+
+    </script>
+</body>
+</html>
